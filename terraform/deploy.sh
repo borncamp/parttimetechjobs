@@ -4,11 +4,11 @@ db_password=`az keyvault secret show --vault-name jobsrailsapp --name db-passwor
 db_host=`az keyvault secret show --vault-name jobsrailsapp --name db-host |grep value|sed -e 's/.*\"\(.*\)\"/\1/'`
 db_database=`az keyvault secret show --vault-name jobsrailsapp --name db-database |grep value|sed -e 's/.*\"\(.*\)\"/\1/'`
 git_user=`az keyvault secret show --vault-name deployment-user --name git-password |grep value|sed -e 's/.*\"\(.*\)\"/\1/'`
-rails_master_key=`az keyvault secret show --vault-name deployment-user --name rails_master_key |grep value|sed -e 's/.*\"\(.*\)\"/\1/'`
+rails_master_key=`az keyvault secret show --vault-name deployment-user --name rails-master-key |grep value|sed -e 's/.*\"\(.*\)\"/\1/'`
 export webapp_username='idfkmanjustwork'
 
 
-export DB_USER=$db_user
+export DB_USERNAME=$db_user
 export DB_PASSWORD=$db_password
 export DB_HOST=$db_host
 export DB_DATABASE=$db_database
