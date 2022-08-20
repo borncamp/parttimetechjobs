@@ -23,6 +23,7 @@ test:
 production:
   <<: *default
   host: <%= ENV['DB_HOST'] %>
+  adapter: postgresql
   database: <%= ENV['DB_DATABASE'] %>
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
