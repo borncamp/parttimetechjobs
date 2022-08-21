@@ -129,8 +129,11 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.8-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
+    pg (1.4.3)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -221,7 +224,7 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -230,9 +233,11 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   rails-bootstrap
+  rake (~> 13.0.6)
   sassc-rails
   selenium-webdriver
   sprockets-rails
@@ -244,7 +249,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.3.20
